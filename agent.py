@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from pydantic_ai import Agent, RunContext
 from snowleopard import SnowLeopardClient
 
-from text2speech import main as run_speech_capture, spoken_texts as spoken_text
+# from text2speech import main as run_speech_capture, spoken_texts as spoken_text
 
 load_dotenv() 
 
@@ -50,5 +50,6 @@ def ask_clai(question: str):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    run_speech_capture()
-    ask_clai(" ".join(spoken_text))
+    #run_speech_capture()
+    #ask_clai(" ".join(spoken_text))
+    ask_clai("give me a song")
